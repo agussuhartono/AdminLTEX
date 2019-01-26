@@ -1,6 +1,17 @@
 Introduction
 ============
 
+AdminLTEX is Admin Template based on [AdminLTE 2.x](http://www.adminlte.io). 
+ 
+The the main goal is make AdminLTE like [CoreUI template](http://www.coreui.io).
+
+Main Feature:
+1. Use Color of CoreUI
+2. only has 1 row header, this is great for mobile device
+
+AdminLTE Section
+================
+
 ![Bower version](https://img.shields.io/bower/v/adminlte.svg)
 [![npm version](https://img.shields.io/npm/v/admin-lte.svg)](https://www.npmjs.com/package/admin-lte)
 [![Packagist](https://img.shields.io/packagist/v/almasaeed2010/adminlte.svg)](https://packagist.org/packages/almasaeed2010/adminlte)
