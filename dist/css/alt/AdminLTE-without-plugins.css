@@ -695,7 +695,7 @@ a:focus {
 }
 @media (max-width: 767px) {
   .control-sidebar {
-    padding-top: 100px;
+    padding-top: 50px;
   }
 }
 .control-sidebar > .tab-content {
