@@ -3,7 +3,7 @@
  * ---------
  */
 .skin-red .main-header .navbar {
-  background-color: #dd4b39;
+  background-color: #f86c6b;
 }
 .skin-red .main-header .navbar .nav > li > a {
   color: #ffffff;
@@ -29,7 +29,7 @@
   color: #fff;
 }
 .skin-red .main-header .navbar .sidebar-toggle:hover {
-  background-color: #d73925;
+  background-color: #f75453;
 }
 @media (max-width: 767px) {
   .skin-red .main-header .navbar .dropdown-menu li.divider {
@@ -39,19 +39,19 @@
     color: #fff;
   }
   .skin-red .main-header .navbar .dropdown-menu li a:hover {
-    background: #d73925;
+    background: #f75453;
   }
 }
 .skin-red .main-header .logo {
-  background-color: #d73925;
+  background-color: #f75453;
   color: #ffffff;
   border-bottom: 0 solid transparent;
 }
 .skin-red .main-header .logo:hover {
-  background-color: #d33724;
+  background-color: #f74f4e;
 }
 .skin-red .main-header li.user-header {
-  background-color: #dd4b39;
+  background-color: #f86c6b;
 }
 .skin-red .content-header {
   background: transparent;
@@ -79,7 +79,7 @@
   background: #1e282c;
 }
 .skin-red .sidebar-menu > li.active > a {
-  border-left-color: #dd4b39;
+  border-left-color: #f86c6b;
 }
 .skin-red .sidebar-menu > li > .treeview-menu {
   margin: 0 1px;
