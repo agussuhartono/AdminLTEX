@@ -3,7 +3,7 @@
  * ----------
  */
 .skin-blue .main-header .navbar {
-  background-color: #20a8d8;
+  background-color: #63c2de;
 }
 .skin-blue .main-header .navbar .nav > li > a {
   color: #ffffff;
@@ -29,7 +29,7 @@
   color: #fff;
 }
 .skin-blue .main-header .navbar .sidebar-toggle:hover {
-  background-color: #1d97c2;
+  background-color: #4ebada;
 }
 @media (max-width: 767px) {
   .skin-blue .main-header .navbar .dropdown-menu li.divider {
@@ -39,19 +39,19 @@
     color: #fff;
   }
   .skin-blue .main-header .navbar .dropdown-menu li a:hover {
-    background: #1d97c2;
+    background: #4ebada;
   }
 }
 .skin-blue .main-header .logo {
-  background-color: #1d97c2;
+  background-color: #4ebada;
   color: #ffffff;
   border-bottom: 0 solid transparent;
 }
 .skin-blue .main-header .logo:hover {
-  background-color: #1c93bd;
+  background-color: #4ab8d9;
 }
 .skin-blue .main-header li.user-header {
-  background-color: #20a8d8;
+  background-color: #63c2de;
 }
 .skin-blue .content-header {
   background: transparent;
@@ -79,7 +79,7 @@
   background: #1e282c;
 }
 .skin-blue .sidebar-menu > li.active > a {
-  border-left-color: #20a8d8;
+  border-left-color: #63c2de;
 }
 .skin-blue .sidebar-menu > li > .treeview-menu {
   margin: 0 1px;
@@ -133,10 +133,10 @@
   border-bottom-left-radius: 0;
 }
 .skin-blue.layout-top-nav .main-header > .logo {
-  background-color: #20a8d8;
+  background-color: #63c2de;
   color: #ffffff;
   border-bottom: 0 solid transparent;
 }
 .skin-blue.layout-top-nav .main-header > .logo:hover {
-  background-color: #1fa5d4;
+  background-color: #5fc0dd;
 }
