@@ -81,6 +81,21 @@
   color: #fff !important;
 }
 
+.bg-primary,
+.bg-secondary,
+.bg-success,
+.bg-info,
+.bg-warning,
+.bg-danger,
+.bg-primary-active,
+.bg-secondary-active,
+.bg-success-active,
+.bg-info-active,
+.bg-warning-active,
+.bg-danger-active {
+	color: #fff !important;
+}
+
 .bg-gray {
   color: #000;
   background-color: @gray-lte !important;
@@ -150,6 +165,31 @@
   background-color: @maroon !important;
 }
 
+.bg-primary {
+  background-color: @primary-color !important;
+}
+
+.bg-secondary {
+  background-color: @secondary-color !important;
+}
+
+.bg-success {
+  background-color: @success-color !important;
+}
+
+.bg-info {
+  background-color: @info-color !important;
+}
+
+.bg-warning {
+  background-color: @warning-color !important;
+}
+
+.bg-danger {
+  background-color: @danger-color !important;
+}
+
+
 //Set of Active Background Colors
 .bg-gray-active {
   color: #000;
@@ -215,6 +255,27 @@
 .bg-maroon-active {
   background-color: darken(@maroon , 3%) !important;
 }
+
+.bg-primary-active {
+  background-color: darken(@primary-color , 6%) !important;
+}
+
+.bg-success-active {
+  background-color: darken(@primary-color , 5%) !important;
+}
+
+.bg-info-active {
+  background-color: darken(@info-color , 6%) !important;
+}
+
+.bg-warning-active {
+  background-color: darken(@warning-color , 6%) !important;
+}
+
+.bg-danger-active {
+  background-color: darken(@danger-color , 6%) !important;
+}
+
 
 //Disabled!
 [class^="bg-"].disabled {

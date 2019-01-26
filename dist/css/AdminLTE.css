@@ -1396,51 +1396,81 @@ a:focus {
 .table tr > td .progress {
   margin: 0;
 }
-.progress-bar-light-blue,
+.progress-bar-light-blue {
+  background-color: #20a8d8;
+}
+.progress-striped .progress-bar-light-blue {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
 .progress-bar-primary {
   background-color: #20a8d8;
 }
-.progress-striped .progress-bar-light-blue,
 .progress-striped .progress-bar-primary {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
-.progress-bar-green,
+.progress-bar-green {
+  background-color: #4dbd74;
+}
+.progress-striped .progress-bar-green {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
 .progress-bar-success {
   background-color: #4dbd74;
 }
-.progress-striped .progress-bar-green,
 .progress-striped .progress-bar-success {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
-.progress-bar-aqua,
+.progress-bar-aqua {
+  background-color: #63c2de;
+}
+.progress-striped .progress-bar-aqua {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
 .progress-bar-info {
   background-color: #63c2de;
 }
-.progress-striped .progress-bar-aqua,
 .progress-striped .progress-bar-info {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
-.progress-bar-yellow,
+.progress-bar-yellow {
+  background-color: #ffc107;
+}
+.progress-striped .progress-bar-yellow {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
 .progress-bar-warning {
   background-color: #ffc107;
 }
-.progress-striped .progress-bar-yellow,
 .progress-striped .progress-bar-warning {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
-.progress-bar-red,
+.progress-bar-red {
+  background-color: #f86c6b;
+}
+.progress-striped .progress-bar-red {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
 .progress-bar-danger {
   background-color: #f86c6b;
 }
-.progress-striped .progress-bar-red,
 .progress-striped .progress-bar-danger {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -4410,13 +4440,27 @@ table.text-center th {
 .bg-purple-active,
 .bg-maroon-active,
 .bg-black-active,
+.alert-danger,
+.alert-error {
+  color: #fff !important;
+}
+.bg-primary,
+.bg-secondary,
+.bg-success,
+.bg-info,
+.bg-warning,
+.bg-danger,
+.bg-primary-active,
+.bg-secondary-active,
+.bg-success-active,
+.bg-info-active,
+.bg-warning-active,
+.bg-danger-active,
 .callout.callout-danger,
 .callout.callout-warning,
 .callout.callout-info,
 .callout.callout-success,
 .alert-success,
-.alert-danger,
-.alert-error,
 .alert-warning,
 .alert-info,
 .label-danger,
@@ -4452,40 +4496,23 @@ table.text-center th {
   background-color: #111111 !important;
 }
 .bg-red,
-.callout.callout-danger,
 .alert-danger,
-.alert-error,
-.label-danger,
-.modal-danger .modal-body {
+.alert-error {
   background-color: #f86c6b !important;
 }
-.bg-yellow,
-.callout.callout-warning,
-.alert-warning,
-.label-warning,
-.modal-warning .modal-body {
+.bg-yellow {
   background-color: #ffc107 !important;
 }
-.bg-aqua,
-.callout.callout-info,
-.alert-info,
-.label-info,
-.modal-info .modal-body {
+.bg-aqua {
   background-color: #63c2de !important;
 }
 .bg-blue {
   background-color: #0073b7 !important;
 }
-.bg-light-blue,
-.label-primary,
-.modal-primary .modal-body {
+.bg-light-blue {
   background-color: #20a8d8 !important;
 }
-.bg-green,
-.callout.callout-success,
-.alert-success,
-.label-success,
-.modal-success .modal-body {
+.bg-green {
   background-color: #4dbd74 !important;
 }
 .bg-navy {
@@ -4512,6 +4539,41 @@ table.text-center th {
 .bg-maroon {
   background-color: #d81b60 !important;
 }
+.bg-primary,
+.label-primary,
+.modal-primary .modal-body {
+  background-color: #20a8d8 !important;
+}
+.bg-secondary {
+  background-color: #c8ced3 !important;
+}
+.bg-success,
+.callout.callout-success,
+.alert-success,
+.label-success,
+.modal-success .modal-body {
+  background-color: #4dbd74 !important;
+}
+.bg-info,
+.callout.callout-info,
+.alert-info,
+.label-info,
+.modal-info .modal-body {
+  background-color: #63c2de !important;
+}
+.bg-warning,
+.alert-warning,
+.label-warning,
+.modal-warning .modal-body {
+  background-color: #ffc107 !important;
+}
+.bg-danger,
+.callout.callout-danger,
+.callout.callout-warning,
+.label-danger,
+.modal-danger .modal-body {
+  background-color: #f86c6b !important;
+}
 .bg-gray-active {
   color: #000;
   background-color: #b5bbc8 !important;
@@ -4519,32 +4581,22 @@ table.text-center th {
 .bg-black-active {
   background-color: #000000 !important;
 }
-.bg-red-active,
-.modal-danger .modal-header,
-.modal-danger .modal-footer {
+.bg-red-active {
   background-color: #f74f4e !important;
 }
-.bg-yellow-active,
-.modal-warning .modal-header,
-.modal-warning .modal-footer {
+.bg-yellow-active {
   background-color: #e7ae00 !important;
 }
-.bg-aqua-active,
-.modal-info .modal-header,
-.modal-info .modal-footer {
+.bg-aqua-active {
   background-color: #4ab8d9 !important;
 }
 .bg-blue-active {
   background-color: #005384 !important;
 }
-.bg-light-blue-active,
-.modal-primary .modal-header,
-.modal-primary .modal-footer {
+.bg-light-blue-active {
   background-color: #1c93bd !important;
 }
-.bg-green-active,
-.modal-success .modal-header,
-.modal-success .modal-footer {
+.bg-green-active {
   background-color: #41af67 !important;
 }
 .bg-navy-active {
@@ -4570,6 +4622,31 @@ table.text-center th {
 }
 .bg-maroon-active {
   background-color: #ca195a !important;
+}
+.bg-primary-active,
+.modal-primary .modal-header,
+.modal-primary .modal-footer {
+  background-color: #1c93bd !important;
+}
+.bg-success-active,
+.modal-success .modal-header,
+.modal-success .modal-footer {
+  background-color: #1d97c2 !important;
+}
+.bg-info-active,
+.modal-info .modal-header,
+.modal-info .modal-footer {
+  background-color: #4ab8d9 !important;
+}
+.bg-warning-active,
+.modal-warning .modal-header,
+.modal-warning .modal-footer {
+  background-color: #e7ae00 !important;
+}
+.bg-danger-active,
+.modal-danger .modal-header,
+.modal-danger .modal-footer {
+  background-color: #f74f4e !important;
 }
 [class^="bg-"].disabled {
   opacity: 0.65;
