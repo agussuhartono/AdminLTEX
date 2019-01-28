@@ -2,6 +2,9 @@
  * Skin: Red
  * ---------
  */
+.skin-red-light .main-header {
+  border-bottom: 1px solid #f20d0b;
+}
 .skin-red-light .main-header .navbar {
   background-color: #f86c6b;
 }
@@ -52,9 +55,6 @@
 }
 .skin-red-light .main-header li.user-header {
   background-color: #f86c6b;
-}
-.skin-red-light .content-header {
-  background: transparent;
 }
 .skin-red-light .wrapper,
 .skin-red-light .main-sidebar,

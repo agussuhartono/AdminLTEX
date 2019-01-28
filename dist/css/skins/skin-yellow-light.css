@@ -2,6 +2,9 @@
  * Skin: Yellow
  * ------------
  */
+.skin-yellow-light .main-header {
+  border-bottom: 1px solid #a07800;
+}
 .skin-yellow-light .main-header .navbar {
   background-color: #ffc107;
 }
@@ -52,9 +55,6 @@
 }
 .skin-yellow-light .main-header li.user-header {
   background-color: #ffc107;
-}
-.skin-yellow-light .content-header {
-  background: transparent;
 }
 .skin-yellow-light .wrapper,
 .skin-yellow-light .main-sidebar,

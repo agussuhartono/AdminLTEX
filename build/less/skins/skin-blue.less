@@ -10,11 +10,16 @@
 .skin-blue {
   //Navbar
   .main-header {
+    border-bottom: 1px solid darken(@light-blue, 20%);
     .navbar {
+	   //border-bottom: 1px solid darken(@light-blue, 25%);
       .navbar-variant(@light-blue; #fff);
       .sidebar-toggle {
         color: #fff;
         &:hover {
+		  /*
+		   * Darken 5% 
+		   */
           background-color: darken(@light-blue, 5%);
         }
       }
@@ -45,14 +50,16 @@
   }
 
   //Content Header
-  .content-header {
-    background: transparent;
-  }
+  //.content-header {
+    //background: #fff;
+	//border-bottom: 1px solid #c8ced3;
+  //}
 
   //Create the sidebar skin
   .skin-dark-sidebar(@light-blue);
 }
 
 .skin-blue.layout-top-nav .main-header > .logo {
-  .logo-variant(@light-blue);
+  //.logo-variant(@light-blue;#fff; darken(@light-blue, 20%); 5px);
+  .logo-variant(@light-blue;);
 }

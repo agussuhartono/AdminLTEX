@@ -2,6 +2,9 @@
  * Skin: Purple
  * ------------
  */
+.skin-purple .main-header {
+  border-bottom: 1px solid #432776;
+}
 .skin-purple .main-header .navbar {
   background-color: #6f42c1;
 }
@@ -52,9 +55,6 @@
 }
 .skin-purple .main-header li.user-header {
   background-color: #6f42c1;
-}
-.skin-purple .content-header {
-  background: transparent;
 }
 .skin-purple .wrapper,
 .skin-purple .main-sidebar,

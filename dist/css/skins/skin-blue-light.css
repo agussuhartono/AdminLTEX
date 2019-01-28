@@ -2,6 +2,9 @@
  * Skin: Blue
  * ----------
  */
+.skin-blue-light .main-header {
+  border-bottom: 1px solid #2694b5;
+}
 .skin-blue-light .main-header .navbar {
   background-color: #63c2de;
 }
@@ -52,9 +55,6 @@
 }
 .skin-blue-light .main-header li.user-header {
   background-color: #63c2de;
-}
-.skin-blue-light .content-header {
-  background: transparent;
 }
 .skin-blue-light .wrapper,
 .skin-blue-light .main-sidebar,

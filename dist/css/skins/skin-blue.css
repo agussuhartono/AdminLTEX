@@ -2,6 +2,9 @@
  * Skin: Blue
  * ----------
  */
+.skin-blue .main-header {
+  border-bottom: 1px solid #2694b5;
+}
 .skin-blue .main-header .navbar {
   background-color: #63c2de;
 }
@@ -29,6 +32,9 @@
   color: #fff;
 }
 .skin-blue .main-header .navbar .sidebar-toggle:hover {
+  /*
+		   * Darken 5% 
+		   */
   background-color: #4ebada;
 }
 @media (max-width: 767px) {
@@ -52,9 +58,6 @@
 }
 .skin-blue .main-header li.user-header {
   background-color: #63c2de;
-}
-.skin-blue .content-header {
-  background: transparent;
 }
 .skin-blue .wrapper,
 .skin-blue .main-sidebar,

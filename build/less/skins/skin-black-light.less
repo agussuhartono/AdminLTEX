@@ -14,24 +14,30 @@
     //.box-shadow(0px 1px 1px rgba(0, 0, 0, 0.05));
     border-bottom: 1px solid @gray-lte;
     .navbar-toggle {
-      color: #333;
+      color: @gray800;
     }
     .navbar-brand {
-      color: #333;
+      color: @dark-color;
       border-right: 1px solid @gray-lte;
     }
     .navbar {
-      .navbar-variant(#fff; #333; #999; #fff);
+      .navbar-variant(#fff; @gray600; @gray800; #fff);
       > .sidebar-toggle {
-        color: #333;
-        border-right: 1px solid @gray-lte;
+        color: @gray600;
+        //border-right: 1px solid @gray-lte;
       }
       .navbar-nav {
         > li > a {
           border-right: 1px solid @gray-lte;
         }
       }
-      .navbar-custom-menu .navbar-nav,
+      .navbar-custom-menu .navbar-nav {
+        > li {
+          > a {
+            border-right-width: 0;
+          }
+        }
+      }
       .navbar-right {
         > li {
           > a {
@@ -39,10 +45,10 @@
             border-right-width: 0;
           }
         }
-      }
+      }	  
     }
     .logo {
-      .logo-variant(#fff; #333);
+      .logo-variant(#fff; @dark-color);
       border-right: 1px solid @gray-lte;
       @media (max-width: @screen-header-collapse) {
         .logo-variant(#222; #fff);
@@ -57,7 +63,8 @@
 
   //Content Header
   .content-header {
-    background: transparent;
+    //background: #fff;
+	//border-bottom: 1px solid #c8ced3;
     box-shadow: none;
   }
   //Create the sidebar skin

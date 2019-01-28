@@ -8,17 +8,17 @@
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
 }
 .skin-black .main-header .navbar-toggle {
-  color: #333;
+  color: #2f353a;
 }
 .skin-black .main-header .navbar-brand {
-  color: #333;
+  color: #2f353a;
   border-right: 1px solid #eee;
 }
 .skin-black .main-header .navbar {
   background-color: #ffffff;
 }
 .skin-black .main-header .navbar .nav > li > a {
-  color: #333333;
+  color: #73818f;
 }
 .skin-black .main-header .navbar .nav > li > a:hover,
 .skin-black .main-header .navbar .nav > li > a:active,
@@ -28,30 +28,28 @@
 .skin-black .main-header .navbar .nav .open > a:focus,
 .skin-black .main-header .navbar .nav > .active > a {
   background: #ffffff;
-  color: #999999;
+  color: #2f353a;
 }
 .skin-black .main-header .navbar .sidebar-toggle {
-  color: #333333;
+  color: #73818f;
 }
 .skin-black .main-header .navbar .sidebar-toggle:hover {
-  color: #999999;
+  color: #2f353a;
   background: #ffffff;
 }
 .skin-black .main-header .navbar > .sidebar-toggle {
-  color: #333;
-  border-right: 1px solid #eee;
+  color: #73818f;
 }
-.skin-black .main-header .navbar .navbar-nav > li > a {
-  border-right: 1px solid #eee;
+.skin-black .main-header .navbar .navbar-custom-menu .navbar-nav > li > a {
+  border-right-width: 0;
 }
-.skin-black .main-header .navbar .navbar-custom-menu .navbar-nav > li > a,
 .skin-black .main-header .navbar .navbar-right > li > a {
   border-left: 1px solid #eee;
   border-right-width: 0;
 }
 .skin-black .main-header .logo {
   background-color: #ffffff;
-  color: #333333;
+  color: #2f353a;
   border-bottom: 0 solid transparent;
   border-right: 1px solid #eee;
 }
@@ -60,20 +58,19 @@
 }
 @media (max-width: 767px) {
   .skin-black .main-header .logo {
-    background-color: #222222;
+    background-color: #23282c;
     color: #ffffff;
     border-bottom: 0 solid transparent;
     border-right: none;
   }
   .skin-black .main-header .logo:hover {
-    background-color: #1f1f1f;
+    background-color: #212529;
   }
 }
 .skin-black .main-header li.user-header {
-  background-color: #222;
+  background-color: #23282c;
 }
 .skin-black .content-header {
-  background: transparent;
   box-shadow: none;
 }
 .skin-black .wrapper,
@@ -153,9 +150,9 @@
   border-bottom-left-radius: 0;
 }
 .skin-black .pace .pace-progress {
-  background: #222;
+  background: #23282c;
 }
 .skin-black .pace .pace-activity {
-  border-top-color: #222;
-  border-left-color: #222;
+  border-top-color: #23282c;
+  border-left-color: #23282c;
 }

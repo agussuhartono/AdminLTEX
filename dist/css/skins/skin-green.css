@@ -2,6 +2,9 @@
  * Skin: Green
  * -----------
  */
+.skin-green .main-header {
+  border-bottom: 1px solid #2c7847;
+}
 .skin-green .main-header .navbar {
   background-color: #4dbd74;
 }
@@ -52,9 +55,6 @@
 }
 .skin-green .main-header li.user-header {
   background-color: #4dbd74;
-}
-.skin-green .content-header {
-  background: transparent;
 }
 .skin-green .wrapper,
 .skin-green .main-sidebar,

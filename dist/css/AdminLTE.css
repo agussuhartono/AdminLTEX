@@ -183,6 +183,7 @@ a:focus {
   position: relative;
   max-height: 100px;
   z-index: 1030;
+  border-bottom: 1px solid #c8ced3;
 }
 .main-header .navbar {
   -webkit-transition: margin-left 0.3s ease-in-out;
@@ -301,7 +302,9 @@ a:focus {
 }
 .content-header {
   position: relative;
-  padding: 15px 15px 0 15px;
+  padding: 10px 15px 10px 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #c8ced3;
 }
 .content-header > h1 {
   margin: 0;
@@ -318,15 +321,15 @@ a:focus {
   background: transparent;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 12px;
+  font-size: 14px;
   padding: 7px 5px;
   position: absolute;
-  top: 15px;
+  top: 10px;
   right: 10px;
   border-radius: 2px;
 }
 .content-header > .breadcrumb > li > a {
-  color: #444;
+  color: #20a8d8;
   text-decoration: none;
   display: inline-block;
 }
@@ -336,7 +339,7 @@ a:focus {
   margin-right: 5px;
 }
 .content-header > .breadcrumb > li + li:before {
-  content: '>\00a0';
+  content: '/';
 }
 @media (max-width: 991px) {
   .content-header > .breadcrumb {
@@ -345,7 +348,7 @@ a:focus {
     top: 0;
     right: 0;
     float: none;
-    background: #d2d6de;
+    background-color: #f0f3f5;
     padding-left: 10px;
   }
   .content-header > .breadcrumb li:before {
@@ -595,21 +598,6 @@ a:focus {
   .sidebar-mini.sidebar-collapse .sidebar-menu li.header {
     display: none !important;
     -webkit-transform: translateZ(0);
-  }
-  .sidebar-mini.sidebar-collapse .main-header .logo {
-    width: 50px;
-  }
-  .sidebar-mini.sidebar-collapse .main-header .logo > .logo-mini {
-    display: block;
-    margin-left: -15px;
-    margin-right: -15px;
-    font-size: 18px;
-  }
-  .sidebar-mini.sidebar-collapse .main-header .logo > .logo-lg {
-    display: none;
-  }
-  .sidebar-mini.sidebar-collapse .main-header .navbar {
-    margin-left: 50px;
   }
 }
 @media (min-width: 768px) {
@@ -932,6 +920,7 @@ a:focus {
   padding: 0 0 0 0;
   margin: 0;
   top: 100%;
+  z-index: 1000;
 }
 .navbar-nav > .notifications-menu > .dropdown-menu > li,
 .navbar-nav > .messages-menu > .dropdown-menu > li,
@@ -941,10 +930,10 @@ a:focus {
 .navbar-nav > .notifications-menu > .dropdown-menu > li.header,
 .navbar-nav > .messages-menu > .dropdown-menu > li.header,
 .navbar-nav > .tasks-menu > .dropdown-menu > li.header {
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
   background-color: #ffffff;
   padding: 7px 10px;
   border-bottom: 1px solid #f4f4f4;
@@ -1142,17 +1131,18 @@ a:focus {
 }
 .navbar-nav > .user-menu .user-image {
   float: left;
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   margin-right: 10px;
-  margin-top: -2px;
+  margin-top: -7px;
 }
 @media (max-width: 767px) {
   .navbar-nav > .user-menu .user-image {
     float: none;
     margin-right: 0;
-    margin-top: -8px;
+    margin-top: -13px;
+    margin-bottom: -10px;
     line-height: 10px;
   }
 }
@@ -1560,7 +1550,7 @@ a:focus {
  */
 .box {
   position: relative;
-  border-radius: 3px;
+  border-radius: 4px;
   background: #ffffff;
   border-top: 3px solid #d2d6de;
   margin-bottom: 20px;
@@ -1719,7 +1709,7 @@ a:focus {
 .overlay-wrapper .overlay {
   z-index: 50;
   background: rgba(255, 255, 255, 0.7);
-  border-radius: 3px;
+  border-radius: 4px;
 }
 .box .overlay > .fa,
 .overlay-wrapper .overlay > .fa {
@@ -1806,13 +1796,13 @@ a:focus {
 .box-body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
   padding: 10px;
 }
 .no-header .box-body {
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
 }
 .box-body > .table {
   margin-bottom: 0;
@@ -1830,19 +1820,19 @@ a:focus {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 4px;
 }
 .box-body .box-pane-right {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 4px;
   border-bottom-left-radius: 0;
 }
 .box-footer {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
   border-top: 1px solid #f4f4f4;
   padding: 10px;
   background-color: #ffffff;
@@ -2143,7 +2133,7 @@ a:focus {
 .timeline > li > .timeline-item {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  border-radius: 3px;
+  border-radius: 4px;
   margin-top: 0;
   background: #fff;
   color: #444;
@@ -2496,13 +2486,13 @@ a:focus {
   margin-bottom: 20px;
   background: #fff;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  border-radius: 3px;
+  border-radius: 4px;
 }
 .nav-tabs-custom > .nav-tabs {
   margin: 0;
   border-bottom-color: #f4f4f4;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
 }
 .nav-tabs-custom > .nav-tabs > li {
   border-top: 3px solid transparent;
@@ -2581,8 +2571,8 @@ a:focus {
 .nav-tabs-custom > .tab-content {
   background: #fff;
   padding: 10px;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 .nav-tabs-custom .dropdown.open > a:active,
 .nav-tabs-custom .dropdown.open > a:focus {
@@ -2625,7 +2615,7 @@ a:focus {
   padding: 0;
 }
 .products-list > .item {
-  border-radius: 3px;
+  border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   padding: 10px 0;
@@ -3047,8 +3037,8 @@ table.text-center th {
 .widget-user .widget-user-header {
   padding: 20px;
   height: 120px;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
 }
 .widget-user .widget-user-username {
   margin-top: 0;
@@ -3076,8 +3066,8 @@ table.text-center th {
 }
 .widget-user-2 .widget-user-header {
   padding: 20px;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
 }
 .widget-user-2 .widget-user-username {
   margin-top: 5px;
@@ -4243,7 +4233,7 @@ table.text-center th {
   margin-bottom: 4px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  border-radius: 3px;
+  border-radius: 4px;
   cursor: move;
 }
 .external-event:hover {
