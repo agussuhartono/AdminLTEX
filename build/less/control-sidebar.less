@@ -83,9 +83,9 @@
       &,
       &:hover {
         border-top: none;
-        border-right: none;
+        border-bottom: none;
         border-left: 1px solid transparent;
-        border-bottom: 1px solid transparent;
+        border-right: 1px solid transparent;
       }
       .icon {
         font-size: 16px;
@@ -99,7 +99,7 @@
         &:focus,
         &:active {
           border-top: none;
-          border-right: none;
+          //border-right: none;
           border-bottom: none;
         }
       }
@@ -239,23 +239,34 @@
   //  Background
   &,
   + .control-sidebar-bg {
-    background: @sidebar-light-bg;
-    border-left: 1px solid @gray-lte;
+    background: @control-sidebar-light-bg;
+    border-left: 1px solid @control-sidebar-light-border-color;
   }
   //  Sidebar tabs
   .nav-tabs.control-sidebar-tabs {
-    border-bottom: @gray-lte;
+    
+	border-bottom: 1px solid @control-sidebar-light-border-color;
+	
     > li {
+	  width: 46px;
       > a {
-        background: darken(@sidebar-light-bg, 5%);
+        //background: darken(@sidebar-light-bg, 5%);
         color: @sidebar-light-color;
-        // Hover and active states
+		height: 46px;
+		width: 46px;
+		
+		// Hover and active states
         &,
         &:hover,
         &:focus {
-          border-left-color: @gray-lte;
-          border-bottom-color: @gray-lte;
+          //border-left-color: @gray300;
+          //border-right-color: @gray300;
         }
+        &:hover {
+          border-left-color: @gray300;
+          border-right-color: @gray300;
+        }
+		
         &:hover,
         &:focus,
         &:active {
@@ -269,8 +280,8 @@
           &:hover,
           &:focus,
           &:active {
-            background: @sidebar-light-bg;
-            color: #111;
+            background: @control-sidebar-light-bg;
+            color: @light-blue;
           }
         }
       }

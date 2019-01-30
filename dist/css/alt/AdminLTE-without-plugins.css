@@ -722,9 +722,9 @@ a:focus {
 .nav-tabs.control-sidebar-tabs > li > a,
 .nav-tabs.control-sidebar-tabs > li > a:hover {
   border-top: none;
-  border-right: none;
+  border-bottom: none;
   border-left: 1px solid transparent;
-  border-bottom: 1px solid transparent;
+  border-right: 1px solid transparent;
 }
 .nav-tabs.control-sidebar-tabs > li > a .icon {
   font-size: 16px;
@@ -734,7 +734,6 @@ a:focus {
 .nav-tabs.control-sidebar-tabs > li.active > a:focus,
 .nav-tabs.control-sidebar-tabs > li.active > a:active {
   border-top: none;
-  border-right: none;
   border-bottom: none;
 }
 @media (max-width: 768px) {
@@ -848,21 +847,23 @@ a:focus {
 }
 .control-sidebar-light,
 .control-sidebar-light + .control-sidebar-bg {
-  background: #f9fafc;
-  border-left: 1px solid #d2d6de;
+  background: #ffffff;
+  border-left: 1px solid #c8ced3;
 }
 .control-sidebar-light .nav-tabs.control-sidebar-tabs {
-  border-bottom: #d2d6de;
+  border-bottom: 1px solid #c8ced3;
+}
+.control-sidebar-light .nav-tabs.control-sidebar-tabs > li {
+  width: 46px;
 }
 .control-sidebar-light .nav-tabs.control-sidebar-tabs > li > a {
-  background: #e8ecf4;
   color: #444444;
+  height: 46px;
+  width: 46px;
 }
-.control-sidebar-light .nav-tabs.control-sidebar-tabs > li > a,
-.control-sidebar-light .nav-tabs.control-sidebar-tabs > li > a:hover,
-.control-sidebar-light .nav-tabs.control-sidebar-tabs > li > a:focus {
-  border-left-color: #d2d6de;
-  border-bottom-color: #d2d6de;
+.control-sidebar-light .nav-tabs.control-sidebar-tabs > li > a:hover {
+  border-left-color: #c8ced3;
+  border-right-color: #c8ced3;
 }
 .control-sidebar-light .nav-tabs.control-sidebar-tabs > li > a:hover,
 .control-sidebar-light .nav-tabs.control-sidebar-tabs > li > a:focus,
@@ -873,8 +874,8 @@ a:focus {
 .control-sidebar-light .nav-tabs.control-sidebar-tabs > li.active > a:hover,
 .control-sidebar-light .nav-tabs.control-sidebar-tabs > li.active > a:focus,
 .control-sidebar-light .nav-tabs.control-sidebar-tabs > li.active > a:active {
-  background: #f9fafc;
-  color: #111;
+  background: #ffffff;
+  color: #63c2de;
 }
 .control-sidebar-light .control-sidebar-heading,
 .control-sidebar-light .control-sidebar-subheading {

@@ -234,7 +234,7 @@ $(function () {
         // Control Sidebar Skin Toggle
         + '<div class="form-group">'
         + '<label class="control-sidebar-subheading">'
-        + '<input type="checkbox"data-sidebarskin="toggle"class="pull-right"/> '
+        + '<input type="checkbox" data-sidebarskin="toggle" class="pull-right"/> '
         + 'Toggle Right Sidebar Skin'
         + '</label>'
         + '<p>Toggle between dark and light skins for the right sidebar</p>'
@@ -349,6 +349,15 @@ $(function () {
     $('#control-sidebar-home-tab').after($tabPane)
 
     setup()
-
+	
+    var $sidebar = $('.control-sidebar')
+    if ($sidebar.hasClass('control-sidebar-dark')) {
+        $sidebar.removeClass('control-sidebar-dark')    
+    } 
+	if ($sidebar.hasClass('control-sidebar-light')) {
+        $sidebar.removeClass('control-sidebar-light')
+    }
+	$sidebar.addClass('control-sidebar-light')		
+	
     $('[data-toggle="tooltip"]').tooltip()
 })
