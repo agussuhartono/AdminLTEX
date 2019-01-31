@@ -401,6 +401,10 @@ a:focus {
     float: right;
   }
 }
+.navbar-nav > li.app-menu > a {
+  padding-top: 15px;
+  padding-bottom: 12px;
+}
 @media (max-width: 991px) {
   .navbar-collapse.pull-left {
     float: none !important;
