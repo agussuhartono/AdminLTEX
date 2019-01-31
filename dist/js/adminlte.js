@@ -14,7 +14,7 @@
 
 // Make sure jQuery has been loaded
 if (typeof jQuery === 'undefined') {
-throw new Error('AdminLTE requires jQuery')
+  throw new Error('AdminLTEX requires jQuery')
 }
 
 /* BoxRefresh()
@@ -325,8 +325,13 @@ throw new Error('AdminLTE requires jQuery')
   };
 
   var Selector = {
+    // the toggler
+    toggle : '.control-sidebar-toggle', 
+    tgOpen : '.control-sidebar-toggle-open', 
+    data   : '[data-toggle="control-sidebar"]',  // ini tombolnya
+
+    // the control-sidebar-sidebar
     sidebar: '.control-sidebar',
-    data   : '[data-toggle="control-sidebar"]',
     open   : '.control-sidebar-open',
     bg     : '.control-sidebar-bg',
     wrapper: '.wrapper',
@@ -335,13 +340,14 @@ throw new Error('AdminLTE requires jQuery')
   };
 
   var ClassName = {
-    open : 'control-sidebar-open',
-    fixed: 'fixed'
+      open  : 'control-sidebar-open',
+      fixed : 'fixed',
+      tgOpen: 'control-sidebar-toggle-open'
   };
 
   var Event = {
-    collapsed: 'collapsed.controlsidebar',
-    expanded : 'expanded.controlsidebar'
+      collapsed: 'collapsed.controlsidebar',
+      expanded : 'expanded.controlsidebar'
   };
 
   // ControlSidebar Class Definition
@@ -380,17 +386,18 @@ throw new Error('AdminLTE requires jQuery')
   };
 
   ControlSidebar.prototype.expand = function () {
-    if (!this.options.slide) {
-      $('body').addClass(ClassName.open);
-    } else {
-      $(Selector.sidebar).addClass(ClassName.open);
-    }
-
-    $(this.element).trigger($.Event(Event.expanded));
+      if (!this.options.slide) {
+          $('body').addClass(ClassName.open);
+      } else {
+          $(Selector.sidebar).addClass(ClassName.open);
+      }
+      $(Selector.toggle).addClass(ClassName.tgOpen);
+      $(this.element).trigger($.Event(Event.expanded));
   };
 
   ControlSidebar.prototype.collapse = function () {
     $('body, ' + Selector.sidebar).removeClass(ClassName.open);
+    $(Selector.toggle).removeClass(ClassName.tgOpen);
     $(this.element).trigger($.Event(Event.collapsed));
   };
 

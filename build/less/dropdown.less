@@ -36,7 +36,7 @@
       position: relative;
     }
 
-    width: 280px; // 280
+    width: 280px; 
     //Remove padding and margins
     padding: 0 0 0 0;
     margin: 0;
@@ -82,7 +82,9 @@
 
   //Clear inner menu padding and margins
   > .dropdown-menu > li .menu {
-    max-height: 250px;
+
+    max-height: 350px;
+    
     margin: 0;
     padding: 0;
     list-style: none;
@@ -165,14 +167,21 @@
   }
 } // .navbar-nav > .messages-menu
 
+
 //App menu
 .navbar-nav > .app-menu {
+
+  .fa {
+    font-size: 22px;
+  }
+
   //Inner menu
   > .dropdown-menu {
 
-    height: 380px;
-
     > li .menu {
+
+      max-height: 350px;
+
       // Messages menu item
       > li > a {
         margin: 0;
@@ -251,6 +260,7 @@
   > .dropdown-menu {
 
     .border-top-radius(0);
+
     padding: 1px 0 0 0;
     border-top-width: 0;
     width: 280px;
@@ -414,21 +424,21 @@
   }
 } // .navbar-custom-menu > .navbar-nav
 
-@media (max-width: @screen-sm-max) {
-  .navbar-custom-menu > .navbar-nav {
-    float: right;
-    > li {
-      position: static;
-      > .dropdown-menu {
-        position: absolute;
-        right: 5%;
-        left: auto;
-        border: 1px solid #ddd;
-        background: #fff;
+  @media (max-width: @screen-sm-max) {
+    .navbar-custom-menu > .navbar-nav {
+      float: right;
+      > li {
+        position: static;
+        > .dropdown-menu {
+          position: absolute;
+          right: 5%;
+          left: auto;
+          border: 1px solid #ddd;
+          background: #fff;
+        }
       }
-    }
-  } // .navbar-custom-menu > .navbar-nav
-} // @media (max-width: @screen-sm-max)
+    } // .navbar-custom-menu > .navbar-nav
+  } // @media (max-width: @screen-sm-max)
 
 
 
@@ -439,7 +449,7 @@
 //.dropdown-menu > li { display: inline-block; }
 
 //.nav > li.dropdown.open {
-  //position: static;
+//   position: static;
 //}
 //.nav > li.dropdown.open .dropdown-menu {
 //  display:table; 
@@ -448,3 +458,4 @@
 //  left:0; 
 //  right:0;
 //}
+//

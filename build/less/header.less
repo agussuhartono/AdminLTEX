@@ -66,22 +66,22 @@
   }
   //Navbar toggle button
   .sidebar-toggle {
-    float: left;
-    background-color: transparent;
-    background-image: none;
-    padding: 9px @navbar-padding-horizontal;
-	//padding: @navbar-padding-vertical @navbar-padding-horizontal;
-    //Add the fontawesome bars icon
-	font-size: 22px;
-    font-family: fontAwesome;
-    &:before {
-      content: "\f0c9";
-    }
-    &:hover {
-      color: #fff;
-    }
-    &:focus,
-    &:active {
+      float: left;
+      background-color: transparent;
+      background-image: none;
+      padding: 9px @navbar-padding-horizontal;
+	    //padding: @navbar-padding-vertical @navbar-padding-horizontal;
+      //Add the fontawesome bars icon
+	    font-size: 22px;
+      font-family: fontAwesome;
+      &:before {
+        content: "\f0c9";
+      }
+      &:hover {
+        color: #fff;
+      }
+      &:focus,
+      &:active {
       background: transparent;
     }
   }
@@ -264,3 +264,25 @@
     }
   }
 }
+
+.control-sidebar-toggle {
+  //float: left;
+  //background-color: transparent;
+  //background-image: none;
+  //padding: 9px @navbar-padding-horizontal;
+  //padding: @navbar-padding-vertical @navbar-padding-horizontal;
+  //Add the fontawesome bars icon
+  font-size: 22px;
+  font-family: fontAwesome;  
+  &:before {
+    content: "\f137";
+  }
+};
+
+.control-sidebar-toggle-open {
+  font-size: 22px;
+  font-family: fontAwesome;
+  &:before {
+    content: "\f138";
+  }
+};

@@ -412,6 +412,20 @@ a:focus {
     right: 40px;
   }
 }
+.control-sidebar-toggle {
+  font-size: 22px;
+  font-family: fontAwesome;
+}
+.control-sidebar-toggle:before {
+  content: "\f137";
+}
+.control-sidebar-toggle-open {
+  font-size: 22px;
+  font-family: fontAwesome;
+}
+.control-sidebar-toggle-open:before {
+  content: "\f138";
+}
 /*
  * Component: Sidebar
  * ------------------
@@ -978,7 +992,7 @@ a:focus {
 .navbar-nav > .notifications-menu > .dropdown-menu > li .menu,
 .navbar-nav > .messages-menu > .dropdown-menu > li .menu,
 .navbar-nav > .tasks-menu > .dropdown-menu > li .menu {
-  max-height: 250px;
+  max-height: 350px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1047,8 +1061,11 @@ a:focus {
 .navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a:after {
   clear: both;
 }
-.navbar-nav > .app-menu > .dropdown-menu {
-  height: 380px;
+.navbar-nav > .app-menu .fa {
+  font-size: 22px;
+}
+.navbar-nav > .app-menu > .dropdown-menu > li .menu {
+  max-height: 350px;
 }
 .navbar-nav > .app-menu > .dropdown-menu > li .menu > li > a {
   margin: 0;
