@@ -25,29 +25,32 @@
 }
 
 //Navbar custom dropdown menu
+.navbar-nav > .app-menu,
 .navbar-nav > .notifications-menu,
 .navbar-nav > .messages-menu,
 .navbar-nav > .tasks-menu {
   //fix width and padding
   > .dropdown-menu {
+
     > li {
       position: relative;
     }
-    width: 280px;
+
+    width: 280px; // 280
     //Remove padding and margins
     padding: 0 0 0 0;
     margin: 0;
     top: 100%;
-	z-index: 1000;
+	  z-index: 1000;
   }
   //Define header class
   > .dropdown-menu > li.header {
     //.border-radius(4px; 4px; 0; 0);
-	font-weight: bold;
-	text-align: center;
+	  font-weight: bold;
+	  text-align: center;
     background-color: @gray200;
     padding: 8px 20px;
-	border-bottom: 1px solid @gray300;
+	  border-bottom: 1px solid @gray300;
     color: @gray600;
     font-size: 14px;
   }
@@ -56,22 +59,22 @@
   > .dropdown-menu > li.footer > a {
     .border-radius(0; 0; 4px; 4px);
     font-size: 12px;
-	font-weight: bolder;
-	text-align: center;
+	  font-weight: bolder;
+    text-align: center;
     background-color: #fff;
-    padding: 7px 10px;
-	
-    border-bottom: 1px solid @gray300;
-	
-    color: #444 !important;
+    padding: 7px 10px;	
+    border-top: 1px solid @gray300;	
+    border-bottom: 1px solid @gray300;	
+    color: @gray900 !important;
+
     @media (max-width: @screen-sm-max) {
       background: #fff !important;
-      color: #444 !important;
+      color: @gray900 !important;
     }
-    text-align: center;
+    
     //Hover state
     &:hover {
-	  background: @gray100;
+	    background: @gray100;
       //text-decoration: none;
       //font-weight: normal;
     }
@@ -79,7 +82,7 @@
 
   //Clear inner menu padding and margins
   > .dropdown-menu > li .menu {
-    //max-height: 250px;
+    max-height: 250px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -160,7 +163,63 @@
     }
 
   }
-}
+} // .navbar-nav > .messages-menu
+
+//App menu
+.navbar-nav > .app-menu {
+  //Inner menu
+  > .dropdown-menu {
+
+    height: 380px;
+
+    > li .menu {
+      // Messages menu item
+      > li > a {
+        margin: 0;
+        padding: 10px 10px;
+        // User image
+        > div > img {
+          .border-radius(4px; 4px; 4px; 4px);
+          margin: auto 10px auto auto;
+          width: 40px;
+          height: 40px;
+        }
+        // Message heading
+        > h4 {
+          padding: 0;
+          margin: 0 0 0 45px;
+          color: #444444;
+          font-size: 15px;
+          position: relative;
+          // Small for message time display
+          > small {
+            color: #999999;
+            font-size: 10px;
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+
+        > p {
+          margin: 0 0 0 45px;
+          font-size: 12px;
+          color: #888888;
+        }
+
+        .clearfix();
+
+      }
+
+      > li > a:hover {
+        > div > img {
+          box-shadow: 0 8px 15px -10px black; 
+          transform: translateY(-1px);      }
+      }
+
+    }
+  }
+} // .navbar-nav > .messages-menu
 
 //Tasks menu
 .navbar-nav > .tasks-menu {
@@ -185,7 +244,12 @@
 
 //User menu
 .navbar-nav > .user-menu {
+  > a.dropdown-toggle {
+    height: 50px;
+  }
+
   > .dropdown-menu {
+
     .border-top-radius(0);
     padding: 1px 0 0 0;
     border-top-width: 0;
@@ -195,6 +259,7 @@
     > .user-body {
       .border-bottom-radius(4px);
     }
+
     // Header menu
     > li.user-header {
       height: 175px;
@@ -221,56 +286,60 @@
           font-size: 12px;
         }
       }
-    }
+    } // li.user-header
 
     // Menu Body
     > .user-body {
-      padding: 15px;
-      border-bottom: 1px solid #f4f4f4;
-      border-top: 1px solid #dddddd;
-      .clearfix();
-      a {
-        color: #444 !important;
-        @media (max-width: @screen-sm-max) {
-          background: #fff !important;
-          color: #444 !important;
-        }
-      }
-    }
+        padding: 15px;
+        border-bottom: 1px solid #f4f4f4;
+        border-top: 1px solid #dddddd;
+        .clearfix();
 
-    // Menu Footer
-    > .user-footer {
-      background-color: #f9f9f9;
-      padding: 10px;
-      .clearfix();
-      .btn-default {
-        color: #666666;
-        &:hover {
+        a {
+          color: #444 !important;
           @media (max-width: @screen-sm-max) {
-            background-color: #f9f9f9;
+            background: #fff !important;
+            color: #444 !important;
           }
         }
       }
-    }
+
+    // Menu Footer
+    > .user-footer {
+        background-color: #f9f9f9;
+        padding: 10px;
+        .clearfix();
+        .btn-default {
+          color: #666666;
+          &:hover {
+            @media (max-width: @screen-sm-max) {
+              background-color: #f9f9f9;
+            }
+          }
+        }
+      } // .user-footer
+
   }
+
   .user-image {
     float: left;
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    margin-right: 10px;
     margin-top: -7px;
+
     @media (max-width: @screen-xs-max) {
       float: none;
       margin-right: 0;
       margin-top: -13px;
-	  margin-bottom: -10px;
+	    margin-bottom: -10px;
       line-height: 10px;
     }
-  }
+
+  } // .user-image
   
-  // 2f353a 73818f
-}
+} // .navbar-nav > .user-menu
+
 
 /* Add fade animation to dropdown menus by appending
  the class .animated-dropdown-menu to the .dropdown-menu ul (or ol)*/
@@ -336,13 +405,14 @@
 .navbar-custom-menu > .navbar-nav {
   > li {
     position: relative;
+    height: 50px;
     > .dropdown-menu {
       position: absolute;
       right: 0;
-      left: auto;
+      left: auto;      
     }
   }
-}
+} // .navbar-custom-menu > .navbar-nav
 
 @media (max-width: @screen-sm-max) {
   .navbar-custom-menu > .navbar-nav {
@@ -357,5 +427,24 @@
         background: #fff;
       }
     }
-  }
-}
+  } // .navbar-custom-menu > .navbar-nav
+} // @media (max-width: @screen-sm-max)
+
+
+
+// full width
+//.nav { margin-bottom: 0; }
+//.dropdown { position: static; }
+//.dropdown-menu { width: 100%; text-align: center; }
+//.dropdown-menu > li { display: inline-block; }
+
+//.nav > li.dropdown.open {
+  //position: static;
+//}
+//.nav > li.dropdown.open .dropdown-menu {
+//  display:table; 
+//  width: 100%; 
+//  text-align: center; 
+//  left:0; 
+//  right:0;
+//}

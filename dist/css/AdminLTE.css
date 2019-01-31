@@ -18,7 +18,7 @@ body {
   height: 100%;
 }
 body {
-  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'segoe ui', Roboto, 'helvetica neue', Arial, sans-serif, 'apple color emoji', 'segoe ui emoji', 'segoe ui symbol', 'noto color emoji';
   font-weight: 400;
   overflow-x: hidden;
   overflow-y: auto;
@@ -914,6 +914,7 @@ a:focus {
 .dropdown-menu > .divider {
   background-color: #eee;
 }
+.navbar-nav > .app-menu > .dropdown-menu,
 .navbar-nav > .notifications-menu > .dropdown-menu,
 .navbar-nav > .messages-menu > .dropdown-menu,
 .navbar-nav > .tasks-menu > .dropdown-menu {
@@ -923,11 +924,13 @@ a:focus {
   top: 100%;
   z-index: 1000;
 }
+.navbar-nav > .app-menu > .dropdown-menu > li,
 .navbar-nav > .notifications-menu > .dropdown-menu > li,
 .navbar-nav > .messages-menu > .dropdown-menu > li,
 .navbar-nav > .tasks-menu > .dropdown-menu > li {
   position: relative;
 }
+.navbar-nav > .app-menu > .dropdown-menu > li.header,
 .navbar-nav > .notifications-menu > .dropdown-menu > li.header,
 .navbar-nav > .messages-menu > .dropdown-menu > li.header,
 .navbar-nav > .tasks-menu > .dropdown-menu > li.header {
@@ -939,6 +942,7 @@ a:focus {
   color: #73818f;
   font-size: 14px;
 }
+.navbar-nav > .app-menu > .dropdown-menu > li.footer > a,
 .navbar-nav > .notifications-menu > .dropdown-menu > li.footer > a,
 .navbar-nav > .messages-menu > .dropdown-menu > li.footer > a,
 .navbar-nav > .tasks-menu > .dropdown-menu > li.footer > a {
@@ -948,33 +952,39 @@ a:focus {
   border-bottom-left-radius: 4px;
   font-size: 12px;
   font-weight: bolder;
+  text-align: center;
   background-color: #fff;
   padding: 7px 10px;
+  border-top: 1px solid #c8ced3;
   border-bottom: 1px solid #c8ced3;
-  color: #444 !important;
-  text-align: center;
+  color: #23282c !important;
 }
 @media (max-width: 991px) {
+  .navbar-nav > .app-menu > .dropdown-menu > li.footer > a,
   .navbar-nav > .notifications-menu > .dropdown-menu > li.footer > a,
   .navbar-nav > .messages-menu > .dropdown-menu > li.footer > a,
   .navbar-nav > .tasks-menu > .dropdown-menu > li.footer > a {
     background: #fff !important;
-    color: #444 !important;
+    color: #23282c !important;
   }
 }
+.navbar-nav > .app-menu > .dropdown-menu > li.footer > a:hover,
 .navbar-nav > .notifications-menu > .dropdown-menu > li.footer > a:hover,
 .navbar-nav > .messages-menu > .dropdown-menu > li.footer > a:hover,
 .navbar-nav > .tasks-menu > .dropdown-menu > li.footer > a:hover {
   background: #f0f3f5;
 }
+.navbar-nav > .app-menu > .dropdown-menu > li .menu,
 .navbar-nav > .notifications-menu > .dropdown-menu > li .menu,
 .navbar-nav > .messages-menu > .dropdown-menu > li .menu,
 .navbar-nav > .tasks-menu > .dropdown-menu > li .menu {
+  max-height: 250px;
   margin: 0;
   padding: 0;
   list-style: none;
   overflow-x: hidden;
 }
+.navbar-nav > .app-menu > .dropdown-menu > li .menu > li > a,
 .navbar-nav > .notifications-menu > .dropdown-menu > li .menu > li > a,
 .navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a,
 .navbar-nav > .tasks-menu > .dropdown-menu > li .menu > li > a {
@@ -983,6 +993,7 @@ a:focus {
   /* Prevent text from breaking */
   border-bottom: 1px solid #c8ced3;
 }
+.navbar-nav > .app-menu > .dropdown-menu > li .menu > li > a:hover,
 .navbar-nav > .notifications-menu > .dropdown-menu > li .menu > li > a:hover,
 .navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a:hover,
 .navbar-nav > .tasks-menu > .dropdown-menu > li .menu > li > a:hover {
@@ -1036,6 +1047,53 @@ a:focus {
 .navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a:after {
   clear: both;
 }
+.navbar-nav > .app-menu > .dropdown-menu {
+  height: 380px;
+}
+.navbar-nav > .app-menu > .dropdown-menu > li .menu > li > a {
+  margin: 0;
+  padding: 10px 10px;
+}
+.navbar-nav > .app-menu > .dropdown-menu > li .menu > li > a > div > img {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  margin: auto 10px auto auto;
+  width: 40px;
+  height: 40px;
+}
+.navbar-nav > .app-menu > .dropdown-menu > li .menu > li > a > h4 {
+  padding: 0;
+  margin: 0 0 0 45px;
+  color: #444444;
+  font-size: 15px;
+  position: relative;
+}
+.navbar-nav > .app-menu > .dropdown-menu > li .menu > li > a > h4 > small {
+  color: #999999;
+  font-size: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.navbar-nav > .app-menu > .dropdown-menu > li .menu > li > a > p {
+  margin: 0 0 0 45px;
+  font-size: 12px;
+  color: #888888;
+}
+.navbar-nav > .app-menu > .dropdown-menu > li .menu > li > a:before,
+.navbar-nav > .app-menu > .dropdown-menu > li .menu > li > a:after {
+  content: " ";
+  display: table;
+}
+.navbar-nav > .app-menu > .dropdown-menu > li .menu > li > a:after {
+  clear: both;
+}
+.navbar-nav > .app-menu > .dropdown-menu > li .menu > li > a:hover > div > img {
+  box-shadow: 0 8px 15px -10px #000000;
+  transform: translateY(-1px);
+}
 .navbar-nav > .tasks-menu > .dropdown-menu > li .menu > li > a {
   padding: 10px;
 }
@@ -1048,6 +1106,9 @@ a:focus {
 .navbar-nav > .tasks-menu > .dropdown-menu > li .menu > li > a > .progress {
   padding: 0;
   margin: 0;
+}
+.navbar-nav > .user-menu > a.dropdown-toggle {
+  height: 50px;
 }
 .navbar-nav > .user-menu > .dropdown-menu {
   border-top-right-radius: 0;
@@ -1132,7 +1193,6 @@ a:focus {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  margin-right: 10px;
   margin-top: -7px;
 }
 @media (max-width: 767px) {
@@ -1197,6 +1257,7 @@ a:focus {
 /* Fix dropdown menu in navbars */
 .navbar-custom-menu > .navbar-nav > li {
   position: relative;
+  height: 50px;
 }
 .navbar-custom-menu > .navbar-nav > li > .dropdown-menu {
   position: absolute;
