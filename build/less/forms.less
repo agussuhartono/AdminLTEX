@@ -3,28 +3,38 @@
  * ---------------
  */
 .form-control {
-  .border-radius(@input-radius);
-  box-shadow: none;
-  border-color: @gray-lte;
-  &:focus {
-    border-color: @light-blue;
+    color: @gray700;
+    border: 1px solid @gray200;
+    .border-radius(@input-radius);
     box-shadow: none;
-  }
-  &::-moz-placeholder,
-  &:-ms-input-placeholder,
-  &::-webkit-input-placeholder {
-    color: #bbb;
-    opacity: 1;
-  }
 
-  &:not(select) {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-  }
+    &:focus {
+        color: @gray700;
+        border-color: @light-blue;
+        border-color: #8ad4ee;
+        box-shadow: 0 0 0 3px rgba(32, 168, 216, .25)
+    }
+
+    &::-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-webkit-input-placeholder {
+        color: @gray600;
+        opacity: 1;
+    }
+
+    &:not(select) {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
 }
 
 .form-group {
+  .input-group-addon {
+     color: @gray700;
+     background-color: @gray100;
+     border-color: @gray200;
+  }
   &.has-success {
     label {
       color: @success-color;
@@ -32,7 +42,11 @@
     .form-control,
     .input-group-addon {
       border-color: @success-color;
-      box-shadow: none;
+      box-shadow: none;      
+    }
+
+    .form-control:focus {
+        box-shadow: 0 0 0 3px rgba(77, 189, 116, .25)
     }
     .help-block {
       color: @success-color;
@@ -48,6 +62,10 @@
       border-color: @warning-color;
       box-shadow: none;
     }
+    .form-control:focus {
+      box-shadow: 0 0 0 3px rgba(250, 209, 96, 0.25)
+    }
+
     .help-block {
       color: @warning-color;
     }
@@ -62,6 +80,9 @@
       border-color: @red;
       box-shadow: none;
     }
+    .form-control:focus {
+      box-shadow: 0 0 0 3px rgba(248, 108, 107, .25)
+    }
     .help-block {
       color: @red;
     }
@@ -71,9 +92,10 @@
 /* Input group */
 .input-group {
   .input-group-addon {
-    .border-radius(@input-radius);
-    border-color: @gray-lte;
-    background-color: #fff;
+    .border-radius(@input-radius);   
+    color: @gray700;
+    background-color: @gray100;
+    border-color: @gray200;    
   }
 }
 
