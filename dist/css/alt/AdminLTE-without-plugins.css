@@ -1651,6 +1651,9 @@ a:focus {
   border-radius: 4px;
   background: #ffffff;
   border-top: 3px solid #d2d6de;
+  border-bottom: 1px solid #c8ced3;
+  border-left: 1px solid #c8ced3;
+  border-right: 1px solid #c8ced3;
   margin-bottom: 20px;
   width: 100%;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -1678,7 +1681,7 @@ a:focus {
   display: none;
 }
 .box .nav-stacked > li {
-  border-bottom: 1px solid #f4f4f4;
+  border-bottom: 1px solid #c8ced3;
   margin: 0;
 }
 .box .nav-stacked > li:last-of-type {
@@ -1689,10 +1692,10 @@ a:focus {
   overflow: auto;
 }
 .box .border-right {
-  border-right: 1px solid #f4f4f4;
+  border-right: 1px solid #c8ced3;
 }
 .box .border-left {
-  border-left: 1px solid #f4f4f4;
+  border-left: 1px solid #c8ced3;
 }
 .box.box-solid {
   border-top: 0;
@@ -1839,12 +1842,13 @@ a:focus {
 }
 .box-header {
   color: #444;
+  background-color: #f0f3f5;
   display: block;
   padding: 10px;
   position: relative;
 }
 .box-header.with-border {
-  border-bottom: 1px solid #f4f4f4;
+  border-bottom: 1px solid #c8ced3;
 }
 .collapsed-box .box-header.with-border {
   border-bottom: none;
@@ -1931,9 +1935,9 @@ a:focus {
   border-top-right-radius: 0;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
-  border-top: 1px solid #f4f4f4;
+  border-top: 1px solid #c8ced3;
   padding: 10px;
-  background-color: #ffffff;
+  background-color: #f0f3f5;
 }
 .chart-legend {
   margin: 10px 0;
@@ -2249,7 +2253,7 @@ a:focus {
 .timeline > li > .timeline-item > .timeline-header {
   margin: 0;
   color: #555;
-  border-bottom: 1px solid #f4f4f4;
+  border-bottom: 1px solid #c8ced3;
   padding: 10px;
   font-size: 16px;
   line-height: 1.1;
@@ -2751,7 +2755,7 @@ a:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
   border-radius: 0;
-  border-bottom: 1px solid #f4f4f4;
+  border-bottom: 1px solid #c8ced3;
 }
 .product-list-in-box > .item:last-of-type {
   border-bottom-width: 0;
@@ -2766,16 +2770,16 @@ a:focus {
 .table > thead > tr > td,
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
-  border-top: 1px solid #f4f4f4;
+  border-top: 1px solid #c8ced3;
 }
 .table > thead > tr > th {
-  border-bottom: 2px solid #f4f4f4;
+  border-bottom: 2px solid #c8ced3;
 }
 .table tr td .progress {
   margin-top: 5px;
 }
 .table-bordered {
-  border: 1px solid #f4f4f4;
+  border: 1px solid #c8ced3;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > tbody > tr > th,
@@ -2783,7 +2787,7 @@ a:focus {
 .table-bordered > thead > tr > td,
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > td {
-  border: 1px solid #f4f4f4;
+  border: 1px solid #c8ced3;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > thead > tr > td {
@@ -3099,10 +3103,10 @@ table.text-center th {
   }
 }
 .modal-header {
-  border-bottom-color: #f4f4f4;
+  border-bottom-color: #c8ced3;
 }
 .modal-footer {
-  border-top-color: #f4f4f4;
+  border-top-color: #c8ced3;
 }
 .modal-primary .modal-header,
 .modal-primary .modal-footer {
@@ -3225,10 +3229,10 @@ table.text-center th {
   padding: 5px;
 }
 .mailbox-controls.with-border {
-  border-bottom: 1px solid #f4f4f4;
+  border-bottom: 1px solid #c8ced3;
 }
 .mailbox-read-info {
-  border-bottom: 1px solid #f4f4f4;
+  border-bottom: 1px solid #c8ced3;
   padding: 10px;
 }
 .mailbox-read-info h3 {
@@ -3981,7 +3985,7 @@ table.text-center th {
 }
 .list-seperator {
   height: 1px;
-  background: #f4f4f4;
+  background: #c8ced3;
   margin: 15px 0 9px 0;
 }
 .list-link > a {
@@ -4068,7 +4072,7 @@ table.text-center th {
   padding: 2px;
 }
 .attachment-block {
-  border: 1px solid #f4f4f4;
+  border: 1px solid #c8ced3;
   padding: 5px;
   margin-bottom: 10px;
   background: #f7f7f7;
