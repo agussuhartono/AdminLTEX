@@ -352,12 +352,12 @@ $(function () {
 	
     var $sidebar = $('.control-sidebar')
     if ($sidebar.hasClass('control-sidebar-dark')) {
-        $sidebar.removeClass('control-sidebar-dark')    
+        $sidebar.removeClass('control-sidebar-dark')
     } 
 	if ($sidebar.hasClass('control-sidebar-light')) {
         $sidebar.removeClass('control-sidebar-light')
     }
-	$sidebar.addClass('control-sidebar-light')		
+	$sidebar.addClass('control-sidebar-light')
 	
     $('[data-toggle="tooltip"]').tooltip()
 })

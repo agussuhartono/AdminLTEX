@@ -1,5 +1,9 @@
 ### CHANGE LOG:
 
+**v2.2.0:**
++ default color for box, box-header and box-footer
++ change color and shadow of @textbox on focus
+
 **v2.1.0:**
 + change icon for control-sidebar toggle button menu
 + add application (module) menu

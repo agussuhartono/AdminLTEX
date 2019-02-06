@@ -1,10 +1,11 @@
 {
-  "name": "admin-lte",
-  "homepage": "https://adminlte.io",
+  "name": "adminltex",
+  "homepage": "https://www.agus.pro",
   "authors": [
-    "Abdullah Almsaeed <abdullah@almsaeedstudio.com>"
+    "Abdullah Almsaeed (original AdminLTE) <abdullah@almsaeedstudio.com>",
+    "Agus Suhartono (AdminLTEX) <agus.suhartono@gmail.com>"
   ],
-  "description": "Admin dashboard and control panel template",
+  "description": "Admin dashboard and control panel template based on AdminLTE with CoreUI style.",
   "main": [
     "index2.html",
     "dist/css/AdminLTE.css",

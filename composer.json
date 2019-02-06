@@ -1,7 +1,7 @@
 {
-  "name": "almasaeed2010/adminlte",
-  "description": "AdminLTE - admin control panel and dashboard that's based on Bootstrap 3",
-  "homepage": "https://adminlte.io/",
+  "name": "agussuhartono/adminltex",
+  "description": "AdminLTEX - admin control panel and dashboard that's based on AdminLTE with CoreUI style.",
+  "homepage": "https://www.agus.pro/",
   "type": "template",
   "keywords": [
     "css",
@@ -16,13 +16,16 @@
   ],
   "authors": [
     {
-      "name": "Abdullah Almsaeed",
+      "name": "Abdullah Almsaeed (original AdminLTE)",
       "email": "abdullah@almsaeedstudio.com"
-    }
+    }, {
+      "name": "Agus Suhartono (AdminLTEX)",
+      "email": "agus.suhartono@gmail.com"
+    }    
   ],
   "license": "MIT",
   "support": {
-    "issues": "https://github.com/almasaeed2010/AdminLTE/issues"
+    "issues": "https://github.com/agussuhartono/AdminLTEX/issues"
   },
   "require": {
     "composer/installers": "1.*",
