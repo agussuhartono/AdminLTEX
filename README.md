@@ -11,6 +11,9 @@ Main Feature:
 
 Demo : https://www.agus.pro/AdminLTEX
 
+!["AdminLTEX Presentation"](https://www.agus.pro/AdminLTEX/dist/img/shoot-AdminLTEX.png "AdminLTEX Presentation")
+
+
 AdminLTE Section
 ================
 
