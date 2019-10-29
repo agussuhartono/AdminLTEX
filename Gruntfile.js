@@ -83,7 +83,7 @@ module.exports = function (grunt) { // jshint ignore:line
           'dist/css/skins/skin-green-light.css' : 'build/less/skins/skin-green-light.less',
           'dist/css/skins/skin-red-light.css'   : 'build/less/skins/skin-red-light.less',
           'dist/css/skins/skin-purple-light.css': 'build/less/skins/skin-purple-light.less',
-          'dist/css/skins/all-skins.css'       : 'build/less/skins/all-skins.less'
+          'dist/css/skins/_all-skins.css'       : 'build/less/skins/_all-skins.less'
         }
       },
       // Skins minified
@@ -104,7 +104,7 @@ module.exports = function (grunt) { // jshint ignore:line
           'dist/css/skins/skin-green-light.min.css' : 'build/less/skins/skin-green-light.less',
           'dist/css/skins/skin-red-light.min.css'   : 'build/less/skins/skin-red-light.less',
           'dist/css/skins/skin-purple-light.min.css': 'build/less/skins/skin-purple-light.less',
-          'dist/css/skins/all-skins.min.css'       : 'build/less/skins/all-skins.less'
+          'dist/css/skins/_all-skins.min.css'       : 'build/less/skins/_all-skins.less'
         }
       }
     },
@@ -112,8 +112,10 @@ module.exports = function (grunt) { // jshint ignore:line
     // Uglify task info. Compress the js files.
     uglify: {
       options   : {
-        mangle          : true,
-        preserveComments: 'some'
+        mangle : true,
+        output: {
+          comments: 'some'
+        },
       },
       production: {
         files: {
@@ -126,22 +128,21 @@ module.exports = function (grunt) { // jshint ignore:line
     concat: {
       options: {
         separator: '\n\n',
-        banner   : '/*! AdminLTE app.js\n'
+        banner   : '/*! AdminLTEX app.js\n'
         + '* ================\n'
         + '* Main JS application file for AdminLTE v2. This file\n'
         + '* should be included in all pages. It controls some layout\n'
         + '* options and implements exclusive AdminLTE plugins.\n'
         + '*\n'
-        + '* @Author  Almsaeed Studio\n'
-        + '* @Support <https://www.almsaeedstudio.com>\n'
-        + '* @Email   <abdullah@almsaeedstudio.com>\n'
+        + '* @author Agus Suhartono\n'
+        + '* @support <https://github.com/agussuhartono/AdminLTEX/issues>\n'
         + '* @version <%= pkg.version %>\n'
         + '* @repository <%= pkg.repository.url %>\n'
         + '* @license MIT <http://opensource.org/licenses/MIT>\n'
         + '*/\n\n'
         + '// Make sure jQuery has been loaded\n'
         + 'if (typeof jQuery === \'undefined\') {\n'
-        + 'throw new Error(\'AdminLTE requires jQuery\')\n'
+        + 'throw new Error(\'AdminLTEX requires jQuery\')\n'
         + '}\n\n'
       },
       dist   : {
@@ -150,10 +151,10 @@ module.exports = function (grunt) { // jshint ignore:line
           'build/js/BoxWidget.js',
           'build/js/ControlSidebar.js',
           'build/js/DirectChat.js',
-          'build/js/Layout.js',
           'build/js/PushMenu.js',
           'build/js/TodoList.js',
-          'build/js/Tree.js'
+          'build/js/Tree.js',
+          'build/js/Layout.js',
         ],
         dest: 'dist/js/adminlte.js'
       }
