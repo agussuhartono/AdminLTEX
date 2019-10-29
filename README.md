@@ -9,9 +9,9 @@ Main Feature:
 1. Use Color of CoreUI
 2. only has 1 row header, this is great for mobile device
 
-Demo : https://www.agus.pro/AdminLTEX
+Demo : https://agussuhartono.github.io/AdminLTEX/
 
-!["AdminLTEX Presentation"](https://www.agus.pro/AdminLTEX/dist/img/shoot-AdminLTEX.png "AdminLTEX Presentation")
+!["AdminLTEX Presentation"](https://agussuhartono.github.io/AdminLTEX/dist/img/shoot-AdminLTEX.png "AdminLTEX Presentation")
 
 
 AdminLTE Section
