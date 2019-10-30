@@ -9,7 +9,7 @@
   background-color: #6f42c1;
 }
 .skin-purple .main-header .navbar .nav > li > a {
-  color: #ffffff;
+  color: #fff;
 }
 .skin-purple .main-header .navbar .nav > li > a:hover,
 .skin-purple .main-header .navbar .nav > li > a:active,
@@ -22,7 +22,7 @@
   color: #f6f6f6;
 }
 .skin-purple .main-header .navbar .sidebar-toggle {
-  color: #ffffff;
+  color: #fff;
 }
 .skin-purple .main-header .navbar .sidebar-toggle:hover {
   color: #f6f6f6;
@@ -47,7 +47,7 @@
 }
 .skin-purple .main-header .logo {
   background-color: #643ab0;
-  color: #ffffff;
+  color: #fff;
   border-bottom: 0 solid transparent;
 }
 .skin-purple .main-header .logo:hover {
@@ -76,19 +76,19 @@
 .skin-purple .sidebar-menu > li > a:hover,
 .skin-purple .sidebar-menu > li.menu-open > a:hover,
 .skin-purple .sidebar-menu > li.active > a:hover {
-  color: #ffffff;
+  color: #fff;
   background: #6f42c1;
 }
 .skin-purple .sidebar-menu > li .treeview-menu > li > a:hover {
-  color: #ffffff;
+  color: #fff;
   background: #6f42c1;
 }
 .skin-purple .sidebar-menu > li.active > a {
-  color: #ffffff;
+  color: #fff;
   background: #3a4248;
 }
 .skin-purple .sidebar-menu > li.menu-open > a {
-  color: #ffffff;
+  color: #fff;
   background: #282d32;
 }
 .skin-purple .sidebar-menu > li.active > a {
@@ -109,7 +109,7 @@
 }
 .skin-purple .sidebar-menu .treeview-menu > li.active > a,
 .skin-purple .sidebar-menu .treeview-menu > li > a:hover {
-  color: #ffffff;
+  color: #fff;
 }
 .skin-purple .sidebar-form {
   border-radius: 3px;
