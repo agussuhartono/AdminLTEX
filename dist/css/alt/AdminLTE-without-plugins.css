@@ -3739,6 +3739,7 @@ table.text-center th {
   background-color: #63c2de !important;
 }
 .bg-warning,
+.callout.callout-warning,
 .alert-warning,
 .label-warning,
 .modal-warning .modal-body {
@@ -3746,7 +3747,6 @@ table.text-center th {
 }
 .bg-danger,
 .callout.callout-danger,
-.callout.callout-warning,
 .label-danger,
 .modal-danger .modal-body {
   background-color: #f86c6b !important;
