@@ -53,56 +53,248 @@
   }
 }
 
+
+.btn-default:focus,
+.btn-default.focus {
+  color: #444;
+  background-color: #f4f4f4;
+  border-color: darken(#f4f4f4, 5%);
+}
+
 //Button color variations
 .btn-default {
   background-color: #f4f4f4;
   color: #444;
   border-color: #ddd;
-  &:hover,
-  &:active,
-  &.hover {
-    background-color: darken(#f4f4f4, 5%);
+
+  &:hover, &.hover {    
+    background-color: darken( #f4f4f4, 5%);
+    border-color: darken(#f4f4f4, 10%);
   }
+
+  &:focus, &.focus {
+    box-shadow: 0 0 0 3px rgba(172, 174, 175, 0.5);
+  }
+
+  &:active, 
+  &.active {
+    color: #fff;
+    background-color: darken(#f4f4f4, 5%);
+    border-color: darken(#f4f4f4, 10%);
+  }  
+
+  &:active:hover,
+  &.active:hover {    
+    background-color: darken(#f4f4f4, 8%);
+    border-color: darken(#f4f4f4, 13%);
+  }
+  
+  &:active.focus,
+  &.active.focus {    
+    box-shadow: 0 0 0 3px rgba(172, 174, 175, 0.5);
+  }  
 }
 
-.btn-primary {
+
+.btn-primary:focus,
+.btn-primary.focus {
+  color: #fff;
   background-color: @primary-color;
   border-color: darken(@primary-color, 5%);
-  &:hover, &:active, &.hover {
+}
+
+
+.btn-primary {
+  color: #fff;
+  background-color: @primary-color;
+  border-color: darken(@primary-color, 5%);
+
+  &:hover, &.hover {    
     background-color: darken(@primary-color, 5%);
+    border-color: darken(@primary-color, 10%);
   }
+
+  &:focus, &.focus {
+    box-shadow: 0 0 0 3px rgba(65, 181, 222, 0.5);
+  }
+
+  &:active, 
+  &.active {
+    color: #fff;
+    background-color: darken(@primary-color, 5%);
+    border-color: darken(@primary-color, 10%);
+  }  
+
+  &:active:hover,
+  &.active:hover {    
+    background-color: darken(@primary-color, 8%);
+    border-color: darken(@primary-color, 13%);
+  }
+  
+  &:active.focus,
+  &.active.focus {    
+    box-shadow: 0 0 0 3px rgba(65, 181, 222, 0.5);
+  }
+
+}
+
+.btn-success:focus,
+.btn-success.focus {
+  color: #fff;
+  background-color: @success-color;
+  border-color: darken(@success-color, 5%);
 }
 
 .btn-success {
   background-color: @success-color;
   border-color: darken(@success-color, 5%);
-  &:hover, &:active, &.hover {
+
+  &:hover, &.hover {    
     background-color: darken(@success-color, 5%);
+    border-color: darken(@success-color, 10%);
   }
+
+  &:focus, &.focus {
+    box-shadow: 0 0 0 3px rgba(53, 165, 92, 0.5)
+  }
+
+  &:active, 
+  &.active {
+    color: #fff;
+    background-color: darken(@success-color, 5%);
+    border-color: darken(@success-color, 10%);
+  }  
+
+  &:active:hover,
+  &.active:hover {    
+    background-color: darken(@success-color, 8%);
+    border-color: darken(@success-color, 13%);
+  }
+  
+  &:active.focus,
+  &.active.focus {    
+    box-shadow: 0 0 0 3px rgba(77, 189, 116, .5)
+  }
+}
+
+.btn-info:focus,
+.btn-info.focus {
+  color: #fff;
+  background-color: @info-color;
+  border-color: darken(@info-color, 5%);
 }
 
 .btn-info {
   background-color: @info-color;
   border-color: darken(@info-color, 5%);
-  &:hover, &:active, &.hover {
+
+  &:hover, &.hover {    
     background-color: darken(@info-color, 5%);
+    border-color: darken(@info-color, 10%);
   }
+
+  &:focus, &.focus {
+    box-shadow: 0 0 0 3px rgba(65, 181, 222, 0.5);
+  }
+
+  &:active, 
+  &.active {
+    color: #fff;
+    background-color: darken(@info-color, 5%);
+    border-color: darken(@info-color, 10%);
+  }  
+
+  &:active:hover,
+  &.active:hover {    
+    background-color: darken(@info-color, 8%);
+    border-color: darken(@info-color, 13%);
+  }
+  
+  &:active.focus,
+  &.active.focus {    
+    box-shadow: 0 0 0 3px rgba(65, 181, 222, 0.5);
+  }
+
+}
+
+.btn-danger:focus,
+.btn-danger.focus {
+  color: #fff;
+  background-color: @danger-color;
+  border-color: darken(@danger-color, 5%);
 }
 
 .btn-danger {
   background-color: @danger-color;
   border-color: darken(@danger-color, 5%);
-  &:hover, &:active, &.hover {
+
+  &:hover, &.hover {    
     background-color: darken(@danger-color, 5%);
+    border-color: darken(@danger-color, 10%);
   }
+
+  &:focus, &.focus {
+    box-shadow: 0 0 0 3px rgba(172, 38, 38, 0.5);
+  }
+
+  &:active, 
+  &.active {
+    color: #fff;
+    background-color: darken(@danger-color, 5%);
+    border-color: darken(@danger-color, 10%);
+  }  
+
+  &:active:hover,
+  &.active:hover {    
+    background-color: darken(@danger-color, 8%);
+    border-color: darken(@danger-color, 13%);
+  }
+  
+  &:active.focus,
+  &.active.focus {    
+    box-shadow: 0 0 0 3px rgba(172, 38, 38, 0.5);
+  }
+  
+}
+
+.btn-warning:focus,
+.btn-warning.focus {
+  color: #fff;
+  background-color: @warning-color;
+  border-color: darken(@warning-color, 5%);
 }
 
 .btn-warning {
   background-color: @warning-color;
   border-color: darken(@warning-color, 5%);
-  &:hover, &:active, &.hover {
+
+  &:hover, &.hover {
     background-color: darken(@warning-color, 5%);
+    border-color: darken(@warning-color, 10%);
   }
+
+  &:focus, &.focus {
+    box-shadow: 0 0 0 3px rgba(146, 112, 20, 0.5);
+  }
+
+  &:active, 
+  &.active {
+    color: #fff;
+    background-color: darken(@warning-color, 5%);
+    border-color: darken(@warning-color, 10%);
+  }  
+
+  &:active:hover,
+  &.active:hover {    
+    background-color: darken(@warning-color, 8%);
+    border-color: darken(@warning-color, 13%);
+  }
+  
+  &:active.focus,
+  &.active.focus {    
+    box-shadow: 0 0 0 3px rgba(146, 112, 20, 0.5);
+  }
+
 }
 
 .btn-outline {
@@ -124,6 +316,12 @@
 //General .btn with bg class
 .btn[class*='bg-']:hover {
   .box-shadow(inset 0 0 100px rgba(0, 0, 0, 0.2));
+}
+
+.btn {
+  &.disabled {
+    opacity: 0.4;
+  }
 }
 
 // Application buttons
